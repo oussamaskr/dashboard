@@ -3,8 +3,7 @@ import "../Pages/Styles/dashboard.css"
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, AreaChart,Area,ResponsiveContainer } from 'recharts';
 import { useSidebar } from "../Contexts/SidebarProvider";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Aos from 'aos';
-import "aos/dist/aos.css"
+
 import { useEffect } from 'react';
 import SalesChart from '../Conponents/Charts/SalesChart';
 import RevenueChart from '../Conponents/Charts/RevenueChart';
