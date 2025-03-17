@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/dashboard/static/css/main.ea640364.css",
+    "main.js": "/dashboard/static/js/main.5fabf873.js",
+    "static/media/asset2.png": "/dashboard/static/media/asset2.2be021bb22dd9a2ecce3.png",
+    "static/media/12953560_Data_security_01.jpg": "/dashboard/static/media/12953560_Data_security_01.2501bee062e6177d35e8.jpg",
+    "static/media/logo2.png": "/dashboard/static/media/logo2.d9852a05cfcb6c99b0a4.png",
+    "static/media/Asus ROG Strix G16 (2023) Gaming laptop  just in love🙂.jpg": "/dashboard/static/media/Asus ROG Strix G16 (2023) Gaming laptop  just in love🙂.05ff8d26e0243628fca6.jpg",
+    "static/media/True Wireless in Ear Earbuds.jpg": "/dashboard/static/media/True Wireless in Ear Earbuds.4f376635a0a668a94ad3.jpg",
+    "static/media/NEW BALANCE 480 Shoes - WHT_GREEN _ Tillys.jpg": "/dashboard/static/media/NEW BALANCE 480 Shoes - WHT_GREEN _ Tillys.237359a5100ade5485a4.jpg",
+    "static/media/profile-pic.webp": "/dashboard/static/media/profile-pic.ec5dfce77c8084d0de46.webp",
+    "static/media/Sudadera Adidas Original color blanco franjas negras en el torso Talla M.jpg": "/dashboard/static/media/Sudadera Adidas Original color blanco franjas negras en el torso Talla M.1d15a0e8a762165823b6.jpg",
+    "static/media/Iphone 16.jpg": "/dashboard/static/media/Iphone 16.e7a1df3bba93be3aeb9d.jpg",
+    "index.html": "/dashboard/index.html",
+    "main.ea640364.css.map": "/dashboard/static/css/main.ea640364.css.map",
+    "main.5fabf873.js.map": "/dashboard/static/js/main.5fabf873.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea640364.css",
+    "static/js/main.5fabf873.js"
+  ]
+}
