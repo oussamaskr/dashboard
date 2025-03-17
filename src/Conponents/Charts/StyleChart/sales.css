@@ -1,0 +1,192 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --accent-color: #e77e22;
+    --backgr-color: #f2f3f2;
+    --backgroundsec-color :#334352;
+    --text-color: #34495e;
+  }
+.sales-chart
+{
+    width: 44%;
+    margin:4rem auto;
+ 
+    height: 55vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border:1px solid #2c3e5052;
+    border-radius:7px;
+    font-size:1.07rem;
+    color:#2c3e50;
+    position: relative;
+    gap: 35px;
+    background: white;
+
+}
+.container-chart 
+{
+  width: 100%;
+  height: 100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.sales-chart h3
+{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    color: #334352;
+    margin-top: 2.75rem;
+
+}
+.hint
+{
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    font-size: .9rem;
+    font-weight: 700;
+    display: flex;
+    gap: 7px;
+}
+.sales-chart .ellipsis
+{
+    position: absolute;
+    top: 10px;
+    right: 11px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: .5rem;
+}
+.sales-chart .ellipsis .last_year_sales
+{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+
+.last_year_sales button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: transform 0.2s ease, background 0.3s ease;
+  }
+  
+  /* Hover Effect - Slight Scale */
+  .last_year_sales button:hover {
+    background: #34495e;
+    transform: scale(1.05);
+  }
+  
+  /* Click Effect - Shrink and Expand */
+  .last_year_sales button:active {
+    transform: scale(0.95);
+  }
+
+
+
+
+  @media only screen and (max-width:600px)
+  {
+    .sales-chart
+    {
+        width:98%;
+        height: auto;
+        font-size: .75rem;
+      }
+      .sales-chart h3
+{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    color: #334352;
+      margin-top: 5.75rem;
+    }
+      .hint
+      {
+          position: absolute;
+          top: 10px;
+          left: 11px;
+          font-size: .85rem;
+          font-weight: 700;
+          display: flex;
+          flex-direction: column;
+          gap: 7px;
+      }
+}
+
+@media only screen and (max-width:768px) and (min-width:601px)
+{
+  .sales-chart
+  {
+      width:94%;
+      
+      height: 50dvh;
+
+    }
+}
+
+
+@media only screen and (max-width:1024px) and (min-width : 769px)
+{
+  .sales-chart
+  {
+      width:94%;
+      padding: 15px;
+    height: auto;
+     
+
+    }
+}
+
+@media only screen and (max-width:385px) and (min-width : 320px)
+{
+  .sales-chart
+  {
+      width:94%;
+      padding: 0;
+      height:auto;
+
+    }
+
+
+}
+
+
+@media only screen and (max-width:384px) and (min-width : 320px)
+{
+.last_year_sales button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+/* Hover Effect - Slight Scale */
+.last_year_sales button:hover {
+  background: #34495e;
+  transform: scale(1.05);
+}
+
+/* Click Effect - Shrink and Expand */
+.last_year_sales button:active {
+  transform: scale(0.95);
+}
+.hint p
+{
+  font-size: 14px;
+}
+}

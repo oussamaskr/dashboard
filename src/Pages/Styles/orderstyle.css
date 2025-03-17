@@ -1,0 +1,65 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #218d39;
+    --accent-color: #e77e22;
+    --backgr-color: #f2f3f2;
+    --backgroundsec-color :#334352;
+    --text-color: #2b3d4e;
+  }
+.order-page
+{
+    width: 100%;
+}
+.orders-overview {
+    display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+   
+    margin:0 auto;
+    padding: 13px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+  
+  .overview-card {
+    flex: .75;
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    min-width: 225px;
+  }
+  .card-icon
+  {
+    color:#2b3d4e ;
+  }
+  .overview-card h3
+  {
+    color: #34495e;
+  }
+  .overview-card p
+  {
+    color: #34495e;
+  }
+  .overview-card:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-icon {
+    font-size: 30px;
+    margin-right: 15px;
+  }
+  
+  /* Unique Colors */
+  .total { border-left: 5px solid #3498db; }
+  .shipped { border-left: 5px solid #218d39; }
+  .pending { border-left: 5px solid #f1c40f; }
+  .cancelled { border-left: 5px solid #e74c3c; }
+  

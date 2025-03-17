@@ -1,0 +1,68 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --accent-color: #e77e22;
+    --backgr-color: #f2f3f2;
+    --backgroundsec-color :#334352;
+    --text-color: #34495e;
+  }
+  .orders-chart
+  {
+    width: 44%;
+    border: 1px solid slategrey;
+    border-radius: 7px;
+    background: white;
+    padding: 10px;
+    color: #334352;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.container-chart 
+{
+  width: 100%;
+  height: 100%;
+  margin-left: -2rem;
+}
+.orders-chart h3 
+{
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+@media only screen and (max-width:600px)
+{
+      .orders-chart
+    {
+        margin-top: 1rem;
+        width: 96%;
+        font-size: .85rem;
+    }
+ }
+ @media only screen and (max-width : 1024px) and (min-width:601px)
+ {
+  .orders-chart
+{
+    margin-top: 1rem;
+    width: 90%;
+    height: auto;
+}
+}
+
+
+@media only screen and (max-width:412px) and (min-width : 320px)
+{
+  .orders-chart
+    {
+        width:96%;
+        height: auto;
+    }
+    .orders-chart h3
+    {
+      margin-top: 1rem;
+    }
+
+}

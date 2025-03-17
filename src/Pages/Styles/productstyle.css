@@ -1,0 +1,288 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #218d39;
+    --accent-color: #e77e22;
+    --backgr-color: #f2f3f2;
+    --backgroundsec-color :#334352;
+    --text-color: #2b3d4e;
+  }
+.product-container-page
+{
+    width: 100%;
+    position: relative;
+}
+.product-overview
+{
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+.product-overview .overview-card-prod
+{
+    flex: .75;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    min-width: 250px;
+}
+
+
+
+.product-overview 
+ .total
+{
+    color: white;
+    background: #3498db;
+}
+
+
+.product-overview  .out-of-stock
+{
+    color: white;
+    background: #e77e22;
+}
+
+.top-selling
+{
+    color: rgb(250, 250, 250);
+    background: #218d39;
+    font-weight: 750;
+}
+.categories 
+{
+    background: #334352;
+    color: white;
+}
+.categories .card-icon,.top-selling .card-icon, .out-of-stock .card-icon, .total .card-icon
+
+{
+    
+    color: white;
+}
+.categories h3
+{
+    font-size: 1.25rem;
+}
+
+.btn-add-product
+{
+position: relative;
+width: 100%;
+}
+
+
+/* From Uiverse.io by andrew-demchenk0 */ 
+.button {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #34974d;
+    background-color: #3aa856;
+    position: absolute;
+    right: 5px;
+  }
+  
+  .button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .button .button__text {
+    transform: translateX(30px);
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: #34974d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .svg {
+    width: 30px;
+    stroke: #fff;
+  }
+  
+  .button:hover {
+    background: #34974d;
+  }
+  
+  .button:hover .button__text {
+    color: transparent;
+  }
+  
+  .button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .button:active .button__icon {
+    background-color: #2e8644;
+  }
+  
+  .button:active {
+    border: 1px solid #2e8644;
+  }
+
+  .add-container-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(43, 61, 78, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's on top */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .add-container-main.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .add-container-main.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .add-modal-content {
+    position: relative;
+    width: 90%; /* Responsive width */
+    max-width: 600px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+  }
+  
+  .add-container-main .close-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #334352;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .add-container-main .close-icon:hover {
+    color: #333;
+  }
+  
+  .add-container {
+    width: 100%;
+  }
+  
+  .add-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--text-color, #333);
+    font-size: 1.8rem;
+  }
+  
+  .add-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .add-container form .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-container form .form-group label {
+    font-size: 1rem;
+    color: var(--text-color, #555);
+    margin-bottom: 0.3rem;
+  }
+  
+  .add-container form .form-group input,
+  .add-container form .form-group select,
+  .add-container form .form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .add-container form .form-group input:focus,
+  .add-container form .form-group select:focus,
+  .add-container form .form-group textarea:focus {
+    border-color: var(--primary-color, #007bff);
+    outline: none;
+  }
+  
+  .add-container form .form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  .add-container form .submit-button {
+    padding: 1rem 1.5rem;
+    background-color: var(--primary-color, #007bff);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.13rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-container form .submit-button:hover {
+    background-color: var(--secondary-color, #0056b3);
+  }
+
+
+  @media only screen and (max-width:710px)
+  {
+    .btn-add-product
+{
+position: relative;
+padding: 19px 10px;
+width: 150px;
+position: absolute;
+right: 0;
+  height: auto;
+}
+
+
+/* From Uiverse.io by andrew-demchenk0 */ 
+.button {
+    position: relative;
+    width:150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #34974d;
+    background-color: #3aa856;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transform: scale(0.89);
+  }
+  
+  }

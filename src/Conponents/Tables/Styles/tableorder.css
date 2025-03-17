@@ -1,0 +1,95 @@
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #218d39;
+  --accent-color: #e77e22;
+  --backgr-color: #f2f3f2;
+  --backgroundsec-color :#334352;
+  --text-color: #2b3d4e;
+}
+.orders-container {
+    padding:10px;
+    width: 100%;
+    overflow-x: scroll;
+    border-radius: 10px;
+  }
+  
+  .search-filter {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 15px;
+
+  }
+  
+  .search-filter input
+   {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    width: 270px;
+    font-size: 1.01rem;
+  }
+  .search-filter select {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    outline: none;
+  }
+  .orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    
+    overflow-x: scroll;
+  }
+  
+  .orders-table th,
+  .orders-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .orders-table th {
+    background: #3498db;
+    color: white;
+  }
+  
+
+  
+  .status {
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .status.shipped { background: #218d39; color: white; border-left: none;}
+  .status.pending { background: #3498db; color: white; border-left: none;}
+  .status.cancelled { background: #e77e22; color: white;border-left: none; }
+  .status.delivered { background: #218d39; color: white;border-left: none; }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .pagination button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: none;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .pagination button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  

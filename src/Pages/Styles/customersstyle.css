@@ -1,0 +1,168 @@
+.customers-mainpage
+{
+    width: 100%;
+}
+
+.customer-overview {
+    display: flex;
+    padding: 1rem;
+    gap: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .overview-card-customer {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    height: 120px;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .overview-card-customer:hover {
+    transform: scale(1.05);
+  }
+  
+  .overview-card-customer .card-icon {
+    font-size: 2rem;
+    color: #ffffff;
+  }
+  
+  .total {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .active {
+    background-color: #218d39;
+    color: white;
+  }
+  
+  .inactive {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .new {
+    background-color: #f39c12;
+    color: white;
+  }
+  
+  h3 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 1rem;
+    opacity: 0.8;
+  }
+  
+
+  .top-customers {
+    margin-top: 6rem;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 6rem;
+  }
+  
+  .top-customers h2 {
+    display: flex;
+    align-items: center;
+    font-size: 1.45rem;
+    color: #34495e;
+    margin-bottom: 15px;
+  }
+  
+  .top-icon {
+    color: #f39c12;
+    margin-right: 10px;
+  }
+  
+  .top-customers-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  
+  .top-customers-list .customer-card {
+    display: flex;
+    flex: .5;
+    flex-direction: column;
+    min-width: 250px;
+    height: 220px;
+    align-items: center;
+    justify-content: space-around;
+    background: #2c3e50;
+    padding: 12px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .top-customers-list .customer-card:hover {
+    transform: scale(1.07);
+  }
+  
+  .avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+
+  }
+  
+  .customer-info {
+    flex: 1;
+    margin-top: 7px;
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+  }
+  
+  .customer-info h4 {
+    margin: 0;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .customer-info p {
+    margin: 2px 0;
+    font-size: 17px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .spend {
+    font-size: 1.35rem;
+    font-weight: bold;
+    color: #27ae60;
+  }
+  .growth-chart {
+    margin-top: 6rem;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 6rem;
+
+  }
+  
+  .growth-chart h2 {
+    font-size: 1.4rem;
+    color: #34495e;
+    margin-bottom: 15px;
+  }
+  
